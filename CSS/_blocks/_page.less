@@ -1,0 +1,341 @@
+// main: ..//style.less
+
+
+.page {
+    background-color: #E0E0E0;
+    padding: 50px 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .page_start {
+            width: 400px;
+            position: relative;
+
+            h2 {
+                text-transform: uppercase;
+                font-weight: 900;
+                line-height: 33px;
+
+                strong {
+                    font-size: 48px;
+                }
+
+                font-size: 29px;
+            }
+
+            .page_list {
+                margin: 40px 0;
+
+                .page_list_item {
+                    text-transform: uppercase;
+                    display: flex;
+                    margin-bottom: 20px;
+                    font-size: 20px;
+
+                    img {
+                        width: 23px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .page_desc {
+                color: #7B7B7B;
+                font-size: 19px;
+                line-height: 40px;
+                text-transform: uppercase;
+                margin-bottom: 120px;
+            }
+
+            .page_start_img {
+                position: absolute;
+                right: 0;
+                bottom: 100px;
+                width: 100px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .page_copyright {
+                .copyright_img {
+                    width: 120px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .copyright_desc {
+                    margin-top: 10px;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .page_end {
+            width: 800px;
+            text-align: center;
+
+            .page_end_desc {
+                margin-bottom: 30px;
+                width: 400px;
+                margin: 0 30px 55px auto;
+
+                h3 {
+                    text-transform: uppercase;
+                    font-weight: 900;
+                }
+
+                .flexan_logo {
+                    width: 300px;
+                    margin: 5px auto;
+
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            .page_end_inner {
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+
+                .price {
+                    display: flex;
+                    flex-direction: column;
+
+                    s {
+                        color: #2B2A29;
+                        font-size: 25px;
+                    }
+
+                    span {
+                        color: #7B7B7B;
+                        font-size: 50px;
+                        font-weight: 900;
+                    }
+                }
+
+                .page_form {
+                    margin-top: 120px;
+
+                    .form_desc {
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+
+                .page_product {
+                    text-align: center;
+
+
+                    .product_img {
+                        width: 500px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:1440px) {
+
+
+    .page {
+        .wrapper {
+            .page_end {
+                .page_end_inner {
+                    .page_product {
+                        .product_img {
+                            width: 420px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width:1024px) {
+
+
+    .page {
+        .wrapper {
+            flex-direction: column;
+            margin: 0 auto;
+            width: 600px;
+
+            .page_start {
+                width: 400px;
+                margin: 0 auto;
+
+                .page_start_img {
+                    display: none;
+                }
+
+                .page_copyright {
+                    display: none;
+                }
+
+                .page_desc {
+                    margin-bottom: 0;
+                }
+            }
+
+            .page_end {
+                margin-top: 30px;
+                width: auto;
+
+                .page_end_desc {
+                    width: auto;
+
+                    .flexan_logo {
+                        width: 300px;
+                        margin: auto;
+                    }
+                }
+
+                .page_end_inner {
+                    flex-direction: column-reverse;
+                    width: 400px;
+                    margin: 0 auto;
+
+                    .page_product {
+                        .product_img {
+                            width: 400px;
+
+                        }
+                    }
+
+                    .page_form {
+                        margin-top: 30px;
+                    }
+
+                    .price {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .page {
+        padding: 20px 0;
+
+        .wrapper {
+            position: relative;
+            width: 400px;
+            flex-direction: column-reverse;
+
+            .page_start {
+                width: 285px;
+                margin: 30px auto;
+                margin-bottom: 530px;
+                text-align: center;
+
+                h2 {
+                    font-size: 17px;
+                    line-height: normal;
+
+                    strong {
+                        font-size: 17px;
+                    }
+                }
+
+                .page_list {
+                    width: 267px;
+                    margin: 25px auto;
+
+                    .page_list_item {
+                        font-size: 14px;
+
+                        img {
+                            width: 18px;
+                        }
+                    }
+                }
+
+                .page_desc {
+                    line-height: 30px;
+                    color: #000000;
+                    margin: 40px 0;
+
+                    strong {
+                        font-weight: 900;
+                    }
+                }
+            }
+
+            .page_end {
+                .page_form {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+
+                .page_end_desc {
+                    margin: 30px 0;
+
+                    .flexan_logo {
+                        width: 250px;
+                    }
+
+                    h3 {
+                        margin-top: 10px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    .page {
+        .wrapper {
+            width: 300px;
+
+            .page_end {
+                .page_end_inner {
+                    width: auto;
+
+                    .page_form {
+                        .form {
+                            width: 300px;
+                        }
+                    }
+
+                    .page_product {
+                        width: auto;
+
+                        .product_img {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
